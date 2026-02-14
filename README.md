@@ -14,6 +14,17 @@ This project utilizes **YOLOv8 Segmentation** and **MiDaS (Monocular Depth Estim
 - AI Models: Ultralytics (YOLOv8), PyTorch (MiDaS)
 - Deep Learning Libraries: Timm, NumPy
 
+  ## Technical Core & Hardware Integration
+Sensor Fusion (The Eyes): Integrated a Livox Avia 3D LiDAR using Triple Return mode to ensure reliable road profiling in high-dust and low-visibility environments.
+
+Edge Computing (The Brain): Deployed an NVIDIA Jetson Orin NX to process high-density point clouds (240k points/sec) and execute deep learning models for real-time pothole geometry extraction.
+
+Industrial Control (The Reflexes): Engineered a real-time communication bridge between the Jetson and a Beckhoff CX9240 PLC using EtherCAT/UDP, achieving sub-50ms system latency.
+
+Feedback & Validation: Utilized MTN/2330 Tri-axial Accelerometers to monitor driver-seat G-forces and validate a 35%+ reduction in vertical vibration.
+
+Actuation: Controlled a 4-channel Pneumo-Hydraulic system to adjust suspension damping/stiffness dynamically before tire-pothole impact.
+
 ##  Installation
 1. Clone the repository:
    ```bash
